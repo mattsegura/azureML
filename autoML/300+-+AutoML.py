@@ -33,8 +33,7 @@ cluster_name = "my-cluster-001"
 
 # Provisioning configuration using AmlCompute
 from azureml.core.compute import AmlCompute
-
-print("Accessing the compute cluster...")
+aprint("Accessing the compute cluster...")
 
 if cluster_name not in ws.compute_targets:
     print("Creating the compute cluster with name: ", cluster_name)
